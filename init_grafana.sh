@@ -50,4 +50,4 @@ curl -X POST "$DEFAULT_URL:$GRAFANA_PORT/api/datasources" \
 echo "Datasource for Zabbix has been created."
 
 
-echo "ZABBIX E GRAFANA CONFIGURADOS PARA O IP #DEFAULT_URL"
+echo "ZABBIX E GRAFANA CONFIGURADOS PARA O IP $DEFAULT_URL"
