@@ -44,5 +44,6 @@ curl -X POST "$DEFAULT_URL:$GRAFANA_PORT/api/datasources" \
         }
       }"
 
+clear
 
 echo "ZABBIX E GRAFANA CONFIGURADOS PARA O IP $DEFAULT_URL"
