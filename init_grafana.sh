@@ -49,6 +49,5 @@ curl -X POST "$DEFAULT_URL:$GRAFANA_PORT/api/datasources" \
 
 echo "Datasource for Zabbix has been created."
 
-# valida se ta tudo ok
-curl -X GET "$DEFAULT_URL:$GRAFANA_PORT/api/datasources/ID" \
-  -H "Authorization: Bearer $TOKEN"
+
+echo "ZABBIX E GRAFANA CONFIGURADOS PARA O IP #DEFAULT_URL"
