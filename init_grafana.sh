@@ -42,7 +42,7 @@ curl -X POST "$DEFAULT_URL:$GRAFANA_PORT/api/datasources" \
         \"url\": \"$DEFAULT_URL/api_jsonrpc.php\",
         \"jsonData\": {
           \"server\": \"$DEFAULT_URL\",
-          \"username\": \"admin\",
+          \"username\": \"Admin\",
           \"password\": \"zabbix\"
         }
       }"
