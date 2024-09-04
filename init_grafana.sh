@@ -22,9 +22,6 @@ if [ -z "$TOKEN" ]; then
   exit 1
 fi
 
-echo "API Token: $TOKEN"
-
-
 curl -s -X POST "$DEFAULT_URL:$GRAFANA_PORT/api/plugins/alexanderzobnin-zabbix-app/settings" \
     -H "Authorization: Bearer $TOKEN" \
     -H "Content-Type: application/json" \
@@ -46,8 +43,6 @@ curl -X POST "$DEFAULT_URL:$GRAFANA_PORT/api/datasources" \
           \"password\": \"zabbix\"
         }
       }"
-
-echo "Datasource for Zabbix has been created."
 
 
 echo "ZABBIX E GRAFANA CONFIGURADOS PARA O IP $DEFAULT_URL"
