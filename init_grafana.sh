@@ -2,7 +2,7 @@
 #!/bin/bash
 
 # Espera o Grafana estar pronto
-#sleep 30
+sleep 60
 
 # Define as variáveis
 if [ -f .env ]; then
