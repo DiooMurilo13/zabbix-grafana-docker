@@ -26,3 +26,14 @@ usermod -aG docker root
 
 # Mensagem de conclusão
 echo "Configuração concluída com sucesso."
+
+# pega o ip da maquina e troca no .env
+IP_ADDRESS=$(hostname -I | awk '{print $1}')
+sed -i "s|^DEFAULT_URL=.*|DEFAULT_URL=http://$IP_ADDRESS|" .env
+sed -i 's/^MYSQL_PASSWORD=.*/MYSQL_PASSWORD=senha/' .env
+
+#inicia containers
+docker compose up -d
+
+#inicia configuracao default do grafana
+./init_grafana.sh

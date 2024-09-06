@@ -1,6 +1,7 @@
 
 #!/bin/bash
 
+echo "Iniciado configuração padrão do grafana. Tempo de conclusão: 2 minutos"
 # Espera o Grafana estar pronto
 sleep 60
 
